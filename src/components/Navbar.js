@@ -1,20 +1,21 @@
 import React from 'react';
 import '../styles/Navbar.css'; // Make sure the CSS is linked correctly
+import logo from '../assets/logo.png'; // Adjust the path according to your project structure
 
 function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-container">
         <div className="navbar-left">
-          <img src="https://ibb.co/wQXkcfW" alt="logo" className="logo" />
+          <img src={logo} alt="logo" className="logo" /> {/* Set logo here */}
         </div>
         <ul className="navbar-menu">
           <li className="dropdown">
             <button className="dropbtn">INFO</button>
             <div className="dropdown-content">
-              <a href="#about">About</a>
-              <a href="#modes">Game Modes</a>
-              <a href="#characters">Characters</a>
+              <a href="#about">UYM 2.0</a>
+              <a href="#modes">UYM</a>
+              <a href="#characters">Members</a>
             </div>
           </li>
           <li className="dropdown">
@@ -30,8 +31,10 @@ function Navbar() {
           <li className="dropdown">
             <button className="dropbtn">OUR SOCIALS</button>
             <div className="dropdown-content">
-              <a href="#twitter">Twitter</a>
-              <a href="#instagram">Instagram</a>
+              <a href="https://x.com/UyouthP">X</a>
+              <a href="https://www.instagram.com/_akshat4763/saved/">Instagram</a>
+              <a href="#instagram">LinkedIn</a>
+              <a href="#instagram">Facebook</a>
             </div>
           </li>
           <li><a href="#esports">ESPORTS</a></li>

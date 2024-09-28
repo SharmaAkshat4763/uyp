@@ -6,12 +6,15 @@
     width: 100%;
     top: 0;
     z-index: 100;
+    box-sizing: border-box; /* Ensure padding is included in width calculations */
 }
 
 .navbar-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1200px; /* Set a max width to prevent overflowing on larger screens */
+    margin: 0 auto; /* Center the navbar container */
 }
 
 .navbar-left {
@@ -20,12 +23,8 @@
 }
 
 .logo {
-    margin-right: 15px;
-    height: 40px;
-}
-
-.riot-logo {
-    height: 30px; /* Smaller for Riot */
+    margin-right: 30px;
+    height: 40px; 
 }
 
 .navbar-menu {
@@ -34,6 +33,9 @@
     align-items: center;
     margin: 0;
     padding: 0;
+    position: absolute; /* Use absolute positioning to center the menu */
+    left: 50%;
+    transform: translateX(-50%); /* Center the menu */
 }
 
 .navbar-menu li {
@@ -85,45 +87,24 @@
 .navbar-right {
     display: flex;
     align-items: center;
-}
-
-/* Buttons on the right side (search, language, play now) */
-.search-btn, .lang-btn, .play-now-btn {
-    margin-left: 20px;
-    color: white;
-    background-color: transparent; /* Remove background */
-    border: none;
-    border-radius: 50%; /* Rounded buttons */
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-/* Hover effect for search and language icons */
-.search-btn:hover, .lang-btn:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Slightly darker hover */
-}
-
-.search-btn .fas, .lang-btn .fas {
-    font-size: 18px;
+    justify-content: flex-end; /* Ensure content stays on the right */
+    flex-grow: 1; /* Allow the right side to grow and push content to the left */
+    max-width: 300px; /* Set a max width to control the size of the right section */
+    margin-left: auto; /* Ensures proper alignment within the navbar */
 }
 
 /* Play Now button */
 .play-now-btn {
     background-color: #ff4655;
     color: white;
-    padding: 8px 50px;
-    margin-right: 20px;
+    padding: 8px 30px; /* Adjust padding to fit within navbar */
+    margin-right: 10px; /* Reduce margin to avoid overflow */
     border-radius: 20px;
     font-weight: bold;
     transition: background-color 0.3s ease;
+    white-space: nowrap; /* Prevent the button text from wrapping */
 }
 
-/* Hover effect for Play Now button */
 .play-now-btn:hover {
     background-color: #d74450;
 }
