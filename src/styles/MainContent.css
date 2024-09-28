@@ -50,86 +50,49 @@ body, html {
 
 .overlay-content p {
   font-size: 1.5rem;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .cta-button {
   background-color: #ff4655;
   color: white;
+  padding: 10px 20px;
   border: none;
-  padding: 15px 30px;
+  border-radius: 5px;
   font-size: 1.2rem;
   cursor: pointer;
-  border-radius: 5px;
   transition: background-color 0.3s ease;
 }
 
 .cta-button:hover {
-  background-color: #ff3045;
+  background-color: #e03e4f;
 }
 
-/* Section styling */
-.new-section {
-  padding: 100px 20px;
-  background-color: #f0f0f0;
-  text-align: center;
-  opacity: 0; /* Initially hidden */
-  transform: translateY(50px); /* Slide from bottom */
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-/* Animates when in view */
-.animate-section {
-  opacity: 1;
-  transform: translateY(0); /* Slide to neutral position */
-}
-
-.new-section h2 {
-  font-size: 2.5rem;
-  color: #222;
-  margin-bottom: 20px;
-}
-
-.new-section p {
-  font-size: 1.2rem;
-  color: #555;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-/* Latest News Section Styling */
+/* Latest News Section */
 .latest-news-section {
-  padding: 50px 20px;
-  background-color: #f8f8f8;
-  text-align: center;
+  padding: 50px 0;
+  background-color: #1c1c1c;
 }
 
 .section-title {
-  font-size: 3rem;
-  margin-bottom: 40px;
-  color: #0f1923;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  font-size: 2.5rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .news-cards-container {
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .news-card {
-  background-color: white;
-  width: 30%;
-  margin-bottom: 30px;
+  background-color: #2c2c2c;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.news-card:hover {
-  transform: scale(1.05);
+  width: 300px;
+  color: white;
 }
 
 .news-image {
@@ -144,33 +107,102 @@ body, html {
 
 .news-category {
   color: #ff4655;
-  font-size: 0.9rem;
+  font-weight: bold;
   margin-bottom: 10px;
 }
 
 .news-title {
-  font-size: 1.5rem;
-  margin-bottom: 15px;
-  color: #0f1923;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
 }
 
 .news-description {
   font-size: 1rem;
-  color: #555;
+  color: #bbbbbb;
 }
 
 .news-button-container {
-  margin-top: 30px;
+  text-align: center;
+  margin-top: 20px;
 }
 
 .news-button {
   background-color: #ff4655;
   color: white;
   padding: 10px 20px;
-  text-decoration: none;
   border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2rem;
 }
 
 .news-button:hover {
-  background-color: #ff3045;
+  background-color: #e03e4f;
+}
+
+/* New Valorant Sections with Video */
+.new-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background-color: #1a1a1a;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease-in-out;
+}
+
+.new-section.animate-section {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.valorant-content {
+  flex: 1;
+  color: #f0f0f0; /* Lighter color for readability */
+  padding-right: 20px;
+}
+
+.valorant-content h2 {
+  font-size: 3rem; /* Larger font size */
+  font-weight: bold; /* Bold for emphasis */
+  color: #ffffff; /* Pure white text */
+  margin-bottom: 20px;
+}
+
+.valorant-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #bbbbbb; /* Light grey for contrast */
+}
+
+/* For Video Container */
+.valorant-video {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.valorant-background-video {
+  width: 80%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Dark theme for all sections */
+h2, p {
+  color: #ffffff;
+}
+
+.new-section h2 {
+  color: #ff4655; /* Red for section headings to stand out */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.new-section p {
+  color: #d1d1d1;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  max-width: 600px; /* For better readability */
 }

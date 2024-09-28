@@ -43,29 +43,7 @@ function MainContent() {
           <button className="cta-button" onClick={handleRegisterClick}>Register Now</button>
         </div>
       </div>
-
-      {/* Additional Content Sections with Scroll Animations */}
-      <div className={`new-section ${isFirstSectionVisible ? 'animate-section' : ''}`} ref={firstSectionRef}>
-        <h2>We Are Valorant</h2>
-        <p>
-          Blend your style and experience on a global, competitive stage. You have 13 rounds to attack and defend your side using sharp gunplay and tactical abilities.
-        </p>
-      </div>
-
-      <div className={`new-section ${isSecondSectionVisible ? 'animate-section' : ''}`} ref={secondSectionRef}>
-        <h2>Defy the Limits</h2>
-        <p>
-          Take on foes across Competitive and Unranked modes as well as Deathmatch and Spike Rush. Play fast and think faster to survive.
-        </p>
-      </div>
-
-      <div className={`new-section ${isThirdSectionVisible ? 'animate-section' : ''}`} ref={thirdSectionRef}>
-        <h2>Join the Fight</h2>
-        <p>
-          Experience the intensity of battle, whether you’re fighting alone or with a team. Valorant offers unique characters, abilities, and styles for every player.
-        </p>
-      </div>
-
+      
       {/* Latest News Section */}
       <div className="latest-news-section">
         <h2 className="section-title">The Latest</h2>
@@ -115,6 +93,63 @@ function MainContent() {
 
         <div className="news-button-container">
           <a href="#" className="news-button">Go to News Page</a>
+        </div>
+      </div>
+
+      {/* Valorant Section with Video */}
+      <div className={`new-section valorant-section ${isFirstSectionVisible ? 'animate-section' : ''}`} ref={firstSectionRef}>
+        <div className="valorant-content">
+          <h2>We Are United Youth Parliament</h2>
+          <p>
+            Blend your style and experience on a global, competitive stage. You have 13 rounds to attack and defend your side using sharp gunplay and tactical abilities.
+          </p>
+        </div>
+        <div className="valorant-video">
+          <video
+            src="https://media.istockphoto.com/id/1399065815/video/particle-plasma-burst-on-black-background.mp4?s=mp4-640x640-is&k=20&c=-ik-_rEbOxWqqrgznQvOSLHmPLaolkTlQmpO3lKljGk="
+            autoPlay
+            loop
+            muted
+            className="valorant-background-video"
+          ></video>
+        </div>
+      </div>
+
+      {/* Defy the Limits Section */}
+      <div className={`new-section valorant-section ${isSecondSectionVisible ? 'animate-section' : ''}`} ref={secondSectionRef}>
+        <div className="valorant-content">
+          <h2>Defy the Limits</h2>
+          <p>
+            Take on foes across Competitive and Unranked modes as well as Deathmatch and Spike Rush. Play fast and think faster to survive.
+          </p>
+        </div>
+        <div className="valorant-video">
+          <video
+            src="https://media.istockphoto.com/id/1399065815/video/particle-plasma-burst-on-black-background.mp4?s=mp4-640x640-is&k=20&c=-ik-_rEbOxWqqrgznQvOSLHmPLaolkTlQmpO3lKljGk="
+            autoPlay
+            loop
+            muted
+            className="valorant-background-video"
+          ></video>
+        </div>
+      </div>
+
+      {/* Join the Fight Section */}
+      <div className={`new-section valorant-section ${isThirdSectionVisible ? 'animate-section' : ''}`} ref={thirdSectionRef}>
+        <div className="valorant-content">
+          <h2>Join the Fight</h2>
+          <p>
+            Experience the intensity of battle, whether you’re fighting alone or with a team. Valorant offers unique characters, abilities, and styles for every player.
+          </p>
+        </div>
+        <div className="valorant-video">
+          <video
+            src="https://media.istockphoto.com/id/1399065815/video/particle-plasma-burst-on-black-background.mp4?s=mp4-640x640-is&k=20&c=-ik-_rEbOxWqqrgznQvOSLHmPLaolkTlQmpO3lKljGk="
+            autoPlay
+            loop
+            muted
+            className="valorant-background-video"
+          ></video>
         </div>
       </div>
     </div>

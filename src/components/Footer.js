@@ -10,10 +10,10 @@ function Footer() {
       </div>
 
       <div className="footer-icons">
-        <a href="#"><img src="https://img.icons8.com/ios-filled/50/DC143C/x.png" alt="X" /></a>
+        <a href="https://x.com/UyouthP"><img src="https://img.icons8.com/ios-filled/50/DC143C/twitter.png" alt="twitter" /></a>
         <a href="#"><img src="https://img.icons8.com/ios-filled/50/DC143C/youtube-play.png" alt="YouTube" /></a>
         <a href="#"><img src="https://img.icons8.com/ios-filled/50/DC143C/instagram-new.png" alt="Instagram" /></a>
-        <a href="#"><img src="https://img.icons8.com/ios-filled/50/DC143C/tiktok.png" alt="TikTok" /></a>
+
         <a href="#"><img src="https://img.icons8.com/ios-filled/50/DC143C/facebook.png" alt="Facebook" /></a>
         <a href="#"><img src="https://img.icons8.com/ios-filled/50/DC143C/discord-logo.png" alt="Discord" /></a>
       </div>
