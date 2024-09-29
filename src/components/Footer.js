@@ -15,8 +15,7 @@ function Footer() {
       </div>
 
       <div className="footer-middle">
-        <img src="/path-to-logo/riot-games-logo.svg" alt="Riot Games" className="footer-logo" />
-        <img src="/path-to-logo/valorant-logo.svg" alt="Valorant" className="footer-logo" />
+        
         <p>© 2020-2024 The United Youth Parliament is a dynamic college program designed to empower students by fostering leadership, debate, and collaboration. It offers a platform for young individuals to engage in discussions on global issues, develop critical thinking skills, and advocate for positive change in their communities.</p>
       </div>
 

@@ -1,14 +1,23 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom'; // Import useNavigate
 import '../styles/Navbar.css';
 import logo from '../assets/logo.png';
 
 function Navbar() {
+  const navigate = useNavigate(); // Initialize useNavigate
+
+  const handleRegisterClick = () => {
+    navigate('/register'); // Navigate to the Register page
+  };
+
   return (
     <nav className="navbar">
       <div className="navbar-container">
         <div className="navbar-left">
-          <img src={logo} alt="logo" className="logo" />
+          {/* Ensure the logo redirects to the main content page */}
+          <Link to="/"> 
+            <img src={logo} alt="logo" className="logo" />
+          </Link>
         </div>
         <ul className="navbar-menu">
           <li className="dropdown">
@@ -27,7 +36,6 @@ function Navbar() {
             </div>
           </li>
           <li><Link to="/news">NEWS</Link></li>
-          <li><Link to="/leaderboards">LEADERBOARDS</Link></li>
           <li><Link to="/support">SUPPORT</Link></li>
           <li className="dropdown">
             <button className="dropbtn">SOCIALS</button>
@@ -39,10 +47,9 @@ function Navbar() {
               <a href="https://www.facebook.com/share/xsQkEYrGGPEmh3Ny/?mibextid=qi2Omg">Facebook</a>
             </div>
           </li>
-        
         </ul>
         <div className="navbar-right">
-          <button className="play-now-btn">REGISTER NOW</button>
+          <button className="play-now-btn" onClick={handleRegisterClick}>REGISTER NOW</button>
         </div>
       </div>
     </nav>
