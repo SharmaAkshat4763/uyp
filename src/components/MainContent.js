@@ -31,7 +31,7 @@ function MainContent() {
       {/* Video Background Section */}
       <div className="main-content">
         <video
-          src="https://media.gettyimages.com/id/1152171654/video/india-gate-at-night-delhi.mp4?s=mp4-640x640-gi&k=20&c=cURbnOdrCfluuXB8Y_rY3x9ulhZKC06bOrpg-SawKC0="
+          src="https://videos.pexels.com/video-files/20794145/20794145-hd_1920_1080_30fps.mp4"
           autoPlay
           loop
           muted
