@@ -1,43 +1,45 @@
 import React from 'react';
-import '../styles/Navbar.css'; // Make sure the CSS is linked correctly
-import logo from '../assets/logo.png'; // Adjust the path according to your project structure
+import { Link } from 'react-router-dom';
+import '../styles/Navbar.css';
+import logo from '../assets/logo.png';
 
 function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-container">
         <div className="navbar-left">
-          <img src={logo} alt="logo" className="logo" /> {/* Set logo here */}
+          <img src={logo} alt="logo" className="logo" />
         </div>
         <ul className="navbar-menu">
           <li className="dropdown">
             <button className="dropbtn">INFO</button>
             <div className="dropdown-content">
-              <a href="#about">UYM 2.0</a>
-              <a href="#modes">UYM</a>
-              <a href="#characters">Members</a>
+              <Link to="/uym2">UYM 2.0</Link>
+              <Link to="/uym">UYM</Link>
+              <Link to="/members">Members</Link>
             </div>
           </li>
           <li className="dropdown">
             <button className="dropbtn">MEDIA</button>
             <div className="dropdown-content">
-              <a href="#media">Photos</a>
-              <a href="#videos">Videos</a>
+              <Link to="/photos">Photos</Link>
+              <Link to="/videos">Videos</Link>
             </div>
           </li>
-          <li><a href="#news">NEWS</a></li>
-          <li><a href="#leaderboards">LEADERBOARDS</a></li>
-          <li><a href="#support">SUPPORT</a></li>
+          <li><Link to="/news">NEWS</Link></li>
+          <li><Link to="/leaderboards">LEADERBOARDS</Link></li>
+          <li><Link to="/support">SUPPORT</Link></li>
           <li className="dropdown">
-            <button className="dropbtn">OUR SOCIALS</button>
+            <button className="dropbtn">SOCIALS</button>
             <div className="dropdown-content">
               <a href="https://x.com/UyouthP">X</a>
-              <a href="https://www.instagram.com/_akshat4763/saved/">Instagram</a>
-              <a href="#instagram">LinkedIn</a>
-              <a href="#instagram">Facebook</a>
+              <a href="https://www.instagram.com/unitedyouthparliament/">Instagram</a>
+              <a href="#linkedin">LinkedIn</a>
+              <a href="https://youtube.com/@unitedyouthparliament?si=UmEG_m_32mciJgA9">YouTube</a>
+              <a href="https://www.facebook.com/share/xsQkEYrGGPEmh3Ny/?mibextid=qi2Omg">Facebook</a>
             </div>
           </li>
-          <li><a href="#esports">ESPORTS</a></li>
+        
         </ul>
         <div className="navbar-right">
           <button className="play-now-btn">REGISTER NOW</button>

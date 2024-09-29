@@ -51,7 +51,7 @@ function Register() {
 
         {step === 2 && (
           <div className="form-step">
-            <h2>What's your name?</h2>
+            <h2>Name</h2>
             <input
               type="text"
               name="name"
@@ -60,7 +60,7 @@ function Register() {
               onChange={handleChange}
               className="input-field"
             />
-            <h2>What's your Course?</h2>
+            <h2>Course</h2>
             <input
               type="text"
               name="Course"
@@ -69,17 +69,17 @@ function Register() {
               onChange={handleChange}
               className="input-field"
             />
-            <h2>What's your Contact?</h2>
+            <h2>Contact</h2>
             <input
               type="number"
               name="Mobile No."
-              placeholder="College Name"
+              placeholder="Mobile No."
               value={formData.college}
               onChange={handleChange}
               className="input-field"
             />
             
-            <h2>What's your college?</h2>
+            <h2>College</h2>
             <input
               type="text"
               name="college"
